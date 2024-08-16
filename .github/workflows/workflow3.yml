@@ -42,5 +42,7 @@ jobs:
     steps:
       - env:
           GH_TOKEN: ${{ secrets.terry_secret_1 }}
-        run: |
-          gh api https://api.github.com/repos/octocat/Spoon-Knife/issues
+        run: |          
+          gh api /octocat --method GET
+#          gh api https://api.github.com/repos/octocat/Spoon-Knife/issues
+
